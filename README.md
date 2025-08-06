@@ -234,6 +234,7 @@ bash setup-kubernetes-goat.sh
 ```bash
 kubectl get pods -n default -o wide
 ```
+Ждем когда все поднимится
 ```bash
 bash access-kubernetes-goat.sh
 ```
