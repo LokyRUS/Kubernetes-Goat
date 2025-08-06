@@ -241,7 +241,16 @@ kubectl get pods -n default -o wide
 ```bash
 bash access-kubernetes-goat.sh
 ```
-
+# Если хост ребутали или восстановили из бэкпа, то могут не подняться поды Goat
+- следует пересоздать удалив их, они поднимутся снова
+получить имя пода
+```bash
+kubectl get pods -n default --show-labels
+```
+удалить под <имя>
+```bash
+kubectl delete pod <имя> -n default
+```
 
 ## 10. Скрипты для диагностики и очистки
 
