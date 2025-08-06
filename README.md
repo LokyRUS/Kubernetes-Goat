@@ -53,14 +53,14 @@ docker --version
 sudo apt-get install -y containerd containernetworking-plugins
 ```
 # Очистка старого CNI
-```
+```bash
 sudo rm -rf /etc/cni/net.d/* /opt/cni/bin/*
 ```
 # Копирование CNI-плагинов
-```
+```bash
 sudo mkdir -p /opt/cni/bin
 ```
-```
+```bash
 sudo cp /usr/lib/cni/* /opt/cni/bin/
 ```
 
@@ -69,6 +69,7 @@ sudo cp /usr/lib/cni/* /opt/cni/bin/
 
 ```bash
 sudo mkdir -p /etc/containerd
+```
 ```bash
 containerd config default | sudo tee /etc/containerd/config.toml
 ```
