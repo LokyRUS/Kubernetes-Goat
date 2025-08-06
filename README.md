@@ -128,10 +128,11 @@ sudo sysctl --system
 ```bash
 sudo kubeadm init \
   --pod-network-cidr=10.244.0.0/16 \
-  --apiserver-advertise-address=<YOUR_IP> \
+  --apiserver-advertise-address=<СЮДА IP тачки> \
   --kubernetes-version=1.33.0 \
   --cri-socket=unix:///var/run/containerd/containerd.sock
 ```
+# Указать ip хоста в строке  `--apiserver-advertise-address=<СЮДА IP тачки>`
 
 ```bash
 mkdir -p $HOME/.kube
