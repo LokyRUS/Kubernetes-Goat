@@ -13,6 +13,7 @@
 
 ```bash
 sudo swapoff -a
+```
 ```bash
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 ```
