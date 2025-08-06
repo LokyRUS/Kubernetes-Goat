@@ -222,7 +222,9 @@ helm version
 
 
 ## 9. Развёртывание Kubernetes Goat
-
+```bash
+sudo apt install git -y
+```
 ```bash
 git clone https://github.com/madhuakula/kubernetes-goat.git
 ```
